@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "archive",
+      "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/archive-4.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "args",
       "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/args-2.7.0",
       "packageUri": "lib/",
@@ -96,6 +102,18 @@
       "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/characters-1.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "checked_yaml",
+      "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/checked_yaml-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "cli_util",
+      "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/cli_util-0.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "clock",
@@ -224,6 +242,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/flutter_launcher_icons-0.13.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0",
       "packageUri": "lib/",
@@ -276,6 +300,12 @@
       "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/http_parser-4.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/image-4.5.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "js",
@@ -480,6 +510,12 @@
       "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/pointycastle-3.9.1",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "posix",
+      "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/posix-6.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "rxdart",
@@ -710,6 +746,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/yaml-3.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "zego_callkit",
       "rootUri": "file:///Users/taiyodegarate/.pub-cache/hosted/pub.dev/zego_callkit-1.0.0+5",
       "packageUri": "lib/",
@@ -764,7 +806,7 @@
       "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-07-05T21:00:20.974695Z",
+  "generated": "2025-07-05T21:52:24.442186Z",
   "generator": "pub",
   "generatorVersion": "3.6.1",
   "flutterRoot": "file:///opt/homebrew/Caskroom/flutter/3.22.2/flutter",

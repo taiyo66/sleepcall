@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zego_uikit_prebuilt_call/zego_uikit_prebuilt_call.dart';
 import 'dart:async';
-
 void main() {
   runApp(const MyApp());
 }
@@ -12,9 +11,48 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CallPage(
-        userID: 'user1', // change ça pour chaque appareil
-        userName: 'User 1',
+      home: const HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xFF0A0E21), // bleu nuit
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/logo.png',
+              width: 150,
+              height: 150,
+            ),
+            const SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CallPage(
+                      userID: 'user1',
+                      userName: 'User 1',
+                    ),
+                  ),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.black,
+              ),
+              child: const Text("Lancer l'appel"),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -29,12 +67,11 @@ class CallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ZegoUIKitPrebuiltCall(
-      appID: 925144029, // Remplace avec ton appID
-      appSign:
-          "b2fa018858c607b8b3b64bb2ba972130e9cb0310afc7e7bd6575e46a45af2325", // Ton appSign
+      appID: 925144029,
+      appSign: "b2fa018858c607b8b3b64bb2ba972130e9cb0310afc7e7bd6575e46a45af2325",
       userID: userID,
       userName: userName,
-      callID: "test-room", // Doit être identique sur les deux devices
+      callID: "test-room",
       config: ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall(),
     );
   }
